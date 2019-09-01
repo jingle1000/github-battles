@@ -1,0 +1,25 @@
+<div class="container">
+    <p>Players:</p>
+    <hr>
+    <div class="container">
+        <div class="row">
+            <div class="p-3 col-lg-3" ng-repeat="user in users track by $index" ng-value="{{$index}}">
+                <div class="card p-0 shadow-sm">
+                    <div class="card-header pt-3">
+                        <img class="profile-pic" ng-src="{{ user.avatar_url }}">
+                        <h6 class="float-right">{{ user.login }}</h6>
+                    </div>
+                    <div class="card-body">
+                        <p> {{ user.bio }}</p>
+                    </div>
+                    <div class="card-footer">
+                        <span class="badge badge-pill badge-secondary" ng-click="changeTeam($index)">{{ user.team }}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="add-player">
+        <i class="fa fa-plus-circle" aria-hidden="true"></i>
+    </div>
+</div>
