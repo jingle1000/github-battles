@@ -13,13 +13,18 @@
                         <p> {{ user.bio }}</p>
                     </div>
                     <div class="card-footer">
-                        <span class="badge badge-pill badge-secondary" ng-click="changeTeam($index)">{{ user.team }}</span>
+                        <span class="badge badge-pill badge-secondary"
+                            ng-click="changeTeam($index)">{{ user.team }}</span>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="add-player">
-        <i class="fa fa-plus-circle" aria-hidden="true"></i>
-    </div>
+    <footer class="footer sticky">
+        <div class="container">
+            <div class="add-player">
+                <i class="fa fa-plus-circle" aria-hidden="true"></i>
+            </div>
+        </div>
+    </footer>
 </div>

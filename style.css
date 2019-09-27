@@ -19,8 +19,18 @@
     text-decoration: none;
 }
 .add-player i {
+    transition: transform 0.5s;
+    float: right;
     font-size: 7rem;
-    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    color: #2ecc71;
+}
+
+.add-player i:hover {
+    transform: rotateZ(90deg);
+    float: right;
+    font-size: 7rem;
     bottom: 1rem;
     right: 1rem;
     color: #2ecc71;
